@@ -1,0 +1,36 @@
+.container {
+  box-shadow: 0 6px 12px -15px black;
+  height: 50px;
+
+  .innerCont {
+    margin: 0px 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .rightCont {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+
+      .tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .tabName {
+        font-size: 12px;
+        margin-right: 12px;
+      }
+    }
+  }
+}

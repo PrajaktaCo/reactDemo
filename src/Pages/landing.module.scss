@@ -1,0 +1,58 @@
+.container {
+  margin: 10px 250px;
+  height: 100px;
+
+  .firstCont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 350px;
+
+    .btn {
+      margin-top: 15px;
+    }
+
+    .imgStyle {
+      height: 400px;
+      width: 400px;
+      border-radius: 150px 150px 0px 0px;
+    }
+  }
+
+  .textStyle {
+    padding-top: 60px;
+
+    .smBld {
+      margin-bottom: 15px;
+    }
+
+    .bldTxtOne {
+      width: 350px;
+    }
+    .bldTxtTwo {
+      width: 430px;
+    }
+    .ltTxtOne {
+      margin-top: 15px;
+      width: 300px;
+    }
+    .ltTxtTwo {
+      margin-top: 15px;
+      width: 400px;
+    }
+  }
+
+  .secCont {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 90px;
+
+    .btn {
+      margin-top: 15px;
+    }
+    .imgStyle {
+      margin-top: 20px;
+    }
+  }
+}
