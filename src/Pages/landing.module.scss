@@ -1,6 +1,6 @@
 .container {
   margin: 10px 250px;
-  height: 100px;
+  // height: 100px;
 
   .firstCont {
     display: flex;
@@ -53,6 +53,58 @@
     }
     .imgStyle {
       margin-top: 20px;
+    }
+  }
+
+  .thrdCont {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 90px;
+
+    .imgStyle_three {
+      margin-top: 20px;
+      border-radius: 160px;
+    }
+
+    .textStyle {
+      width: 100%;
+      padding-left: 50px;
+      padding-top: 0px;
+
+      .ltTxtThree {
+        margin-top: 15px;
+        padding-right: 30px;
+        text-align: left;
+      }
+    }
+  }
+  .subTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pricePlan {
+    margin-top: 40px;
+
+    .smTxt {
+      margin-bottom: 8px;
+    }
+  }
+  .testimonal {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .smTxt {
+      margin-bottom: 8px;
+    }
+    .imgStyle {
+      width: 600px;
+      height: 200px;
+      margin-top: 30px;
     }
   }
 }

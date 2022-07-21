@@ -1,6 +1,20 @@
 import React from "react";
-import { Container, Header, Text, Button } from "../Components";
-import { textCardOne, textCardTwo } from "../Constant/en";
+import {
+  Container,
+  Header,
+  Text,
+  Button,
+  SubTitle,
+  PricePlan,
+} from "../Components";
+import {
+  textCardOne,
+  textCardTwo,
+  textCardThree,
+  pricePlan,
+  pricePlanCard,
+  testimonal,
+} from "../Constant/en";
 import styles from "./landing.module.scss";
 
 const Landing = () => {
@@ -38,17 +52,11 @@ const Landing = () => {
 
         <Container cntStyle={styles.secCont}>
           <div className={styles.textStyle}>
-            <Text
-              text={textCardTwo.txt1}
-              fontWeight={"600"}
-              fontSize={12}
-              txtStyle={styles.smBld}
-            />
-            <Text
-              text={textCardTwo.txt2}
-              fontWeight={"bold"}
-              fontSize={31}
-              txtStyle={styles.bldTxtTwo}
+            <SubTitle
+              ltTxt={textCardTwo.txt1}
+              bldTxt={textCardTwo.txt2}
+              smStyle={styles.smBld}
+              bldStyle={styles.bldTxtTwo}
             />
             <Text
               text={textCardTwo.txt3}
@@ -67,6 +75,53 @@ const Landing = () => {
             src={"./assets/images/imgTwo.jpeg"}
             className={styles.imgStyle}
             alt={"lady"}
+          />
+        </Container>
+
+        <Container cntStyle={styles.thrdCont}>
+          <img
+            src={"./assets/images/imgthree.jpeg"}
+            className={styles.imgStyle_three}
+            alt={"lady"}
+          />
+          <div className={styles.textStyle}>
+            <SubTitle
+              ltTxt={textCardThree.txt1}
+              bldTxt={textCardThree.txt2}
+              smStyle={styles.smBld}
+              bldStyle={styles.bldTxtTwo}
+            />
+            <Text
+              text={textCardThree.txt3}
+              fontWeight={"normal"}
+              fontSize={12}
+              fontColor={"grey"}
+              txtStyle={styles.ltTxtThree}
+            />
+          </div>
+        </Container>
+        <Container cntStyle={styles.pricePlan}>
+          <SubTitle
+            ltTxt={pricePlan.header.light}
+            bldTxt={pricePlan.header.bold}
+            cntStyle={styles.subTitle}
+            smStyle={styles.smTxt}
+            fontSize={18}
+          />
+          <PricePlan data={pricePlanCard} />
+        </Container>
+        <Container cntStyle={styles.testimonal}>
+          <SubTitle
+            ltTxt={testimonal.title}
+            bldTxt={testimonal.subTitle}
+            cntStyle={styles.subTitle}
+            smStyle={styles.smTxt}
+            fontSize={18}
+          />
+          <img
+            src={"./assets/images/testimonial-front.png"}
+            className={styles.imgStyle}
+            alt={"testional"}
           />
         </Container>
       </div>

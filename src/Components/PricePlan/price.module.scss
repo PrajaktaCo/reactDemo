@@ -1,0 +1,51 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .cardWrapper {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 25px 20px 40px 20px;
+    width: 220px;
+
+    .price {
+      display: flex;
+      flex-direction: row;
+      // align-items: flex-start;
+      margin-top: 15px;
+
+      .dollar {
+        margin-top: 12px;
+      }
+    }
+
+    .divider {
+      margin-top: 15px;
+      border: 0.1px solid lightgray;
+      margin-bottom: 20px;
+    }
+    .listItem {
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .imgStyle {
+        width: 20px;
+        height: 18px;
+        margin-right: 20px;
+      }
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+  .cardWrapper:hover {
+    box-shadow: -1px 2px 18px #b9b8b8;
+    border-top: 2px solid darkorange;
+    transform: scale(1.1);
+  }
+}
