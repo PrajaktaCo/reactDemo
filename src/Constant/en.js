@@ -110,7 +110,7 @@ export const experimentCard = [
     desc: "Bring to the table win-win survival strategies to ensure proactive domination",
   },
   {
-    img: "./assets/images/imgtwo.jpeg",
+    img: "./assets/images/imgTwo.jpeg",
     status: "Design",
     date: "June 22, 2022",
     label: "Peter Funch shares the photo books that insprie his own practice",
