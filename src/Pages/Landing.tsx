@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   Header,
@@ -6,6 +6,8 @@ import {
   Button,
   SubTitle,
   PricePlan,
+  News,
+  Footer,
 } from "../Components";
 import {
   textCardOne,
@@ -14,10 +16,15 @@ import {
   pricePlan,
   pricePlanCard,
   testimonal,
+  experiment,
+  experimentCard,
+  contact,
+  footer,
 } from "../Constant/en";
 import styles from "./landing.module.scss";
 
 const Landing = () => {
+  const [email, setEmail] = useState("");
   return (
     <div>
       <Header />
@@ -124,7 +131,48 @@ const Landing = () => {
             alt={"testional"}
           />
         </Container>
+        <Container cntStyle={styles.testimonal}>
+          <SubTitle
+            ltTxt={experiment.title}
+            bldTxt={experiment.subTitle}
+            cntStyle={styles.subTitle}
+            smStyle={styles.smTxt}
+            fontSize={18}
+          />
+          <News data={experimentCard} />
+        </Container>
+        <Container cntStyle={styles.contact}>
+          <div>
+            <SubTitle
+              ltTxt={contact.title}
+              bldTxt={contact.subTitle}
+              cntStyle={styles.txt}
+              bldStyle={styles.bldStyle}
+              fontSize={21}
+            />
+            <div className={styles.emailWrapper}>
+              <input
+                type="text"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={contact.placeHolder}
+                className={styles.email}
+              />
+              <Button
+                label={"Contact Us"}
+                onClick={() => {}}
+                btnStyle={styles.btn}
+              />
+            </div>
+          </div>
+          <img
+            src={"./assets/images/imgOne.jpeg"}
+            className={styles.imgStyle}
+            alt={"lady"}
+          />
+        </Container>
       </div>
+      <Footer data={footer} />
     </div>
   );
 };

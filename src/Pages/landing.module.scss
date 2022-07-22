@@ -107,4 +107,45 @@
       margin-top: 30px;
     }
   }
+  .contact {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    height: 200px;
+    padding: 40px 90px 0px 60px;
+    box-shadow: -1px 2px 18px #b9b8b8;
+    .imgStyle {
+      height: 200px;
+      width: 200px;
+      border-radius: 150px 150px 0px 0px;
+    }
+    .txt {
+      text-align: left;
+      margin-top: 10px;
+    }
+    .bldStyle {
+      margin-top: 10px;
+    }
+    .emailWrapper {
+      display: flex;
+      flex-direction: row;
+      width: 350px;
+      justify-content: space-between;
+      margin-top: 35px;
+      .email {
+        width: 200px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding-left: 10px;
+        color: lightgray;
+        font-size: 10px;
+      }
+      .email:focus {
+        color: black;
+      }
+    }
+  }
 }

@@ -1,0 +1,37 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  .cardWrapper {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 280px;
+    .img {
+      width: 280px;
+      height: 200px;
+    }
+    .innerWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 20px 20px 20px;
+      .btn {
+        background-color: lightblue;
+      }
+    }
+    .textWrapper {
+      margin: 20px 20px 20px 20px;
+      .desc {
+        margin-top: 15px;
+      }
+    }
+  }
+  .cardWrapper:hover {
+    box-shadow: -1px 2px 18px #b9b8b8;
+    transform: scale(1.03);
+  }
+}

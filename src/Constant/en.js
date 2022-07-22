@@ -95,3 +95,61 @@ export const testimonal = {
   title: "Testimonals",
   subTitle: "Awesome clients we've worked with",
 };
+
+export const experiment = {
+  title: "Latest News",
+  subTitle: "Thoughts and experiments",
+};
+
+export const experimentCard = [
+  {
+    img: "./assets/images/imgOne.jpeg",
+    status: "Design",
+    date: "June 22, 2022",
+    label: "Apartmento at ten: a decade of celebrating the everyday home",
+    desc: "Bring to the table win-win survival strategies to ensure proactive domination",
+  },
+  {
+    img: "./assets/images/imgtwo.jpeg",
+    status: "Design",
+    date: "June 22, 2022",
+    label: "Peter Funch shares the photo books that insprie his own practice",
+    desc: "Bring to the table win-win survival strategies to ensure proactive domination",
+  },
+  {
+    img: "./assets/images/imgthree.jpeg",
+    status: "Developing",
+    date: "June 22, 2022",
+    label: "Aron Kelvin's captivating images of the Bulgarian demon chasers",
+    desc: "Bring to the table win-win survival strategies to ensure proactive domination",
+  },
+];
+
+export const contact = {
+  title: "Ready to Improve Your Experience",
+  subTitle: "With Busin Technology?",
+  placeHolder: "Enter your e-mail",
+};
+
+export const footer = [
+  {
+    title: "BUSIN",
+    list: ["@info@yourdomain.com", "(+68) 120034509"],
+  },
+  {
+    title: "Extra Links",
+    list: ["Extra Links", "About Us", "Service", "Pricing", "Features"],
+  },
+  {
+    title: "",
+    list: ["How it works", "F.A.Q", "Contact Us", "Coming Soon"],
+  },
+  {
+    title: "Recent Posts",
+    list: ["On the head with thw free internet", "Turpisdolor"],
+  },
+  {
+    title: "Social Media",
+    list: ["Your email", "Get latest post"],
+  },
+];
